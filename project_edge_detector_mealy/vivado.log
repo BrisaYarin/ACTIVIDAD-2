@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Nov  3 20:06:09 2026
+# Process ID         : 14704
+# Current directory  : C:/DSD_TAREAS/project_edge_detector_mealy
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent1816 C:\DSD_TAREAS\project_edge_detector_mealy\project_edge_detector_mealy.xpr
+# Log file           : C:/DSD_TAREAS/project_edge_detector_mealy/vivado.log
+# Journal file       : C:/DSD_TAREAS/project_edge_detector_mealy\vivado.jou
+# Running On         : Yarin
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz
+# CPU Frequency      : 1805 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 34068 MB
+# Swap memory        : 5368 MB
+# Total Virtual      : 39437 MB
+# Available Virtual  : 29890 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/DSD_TAREAS/project_edge_detector_mealy/project_edge_detector_mealy.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/DSD_TAREAS/project_edge_detector_mealy/project_edge_detector_mealy.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'edge_detector_mealy_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/DSD_TAREAS/project_edge_detector_mealy/project_edge_detector_mealy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'edge_detector_mealy_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/DSD_TAREAS/project_edge_detector_mealy/project_edge_detector_mealy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj edge_detector_mealy_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/DSD_TAREAS/project_edge_detector_mealy/project_edge_detector_mealy.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot edge_detector_mealy_tb_behav xil_defaultlib.edge_detector_mealy_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot edge_detector_mealy_tb_behav xil_defaultlib.edge_detector_mealy_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/DSD_TAREAS/project_edge_detector_mealy/project_edge_detector_mealy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "edge_detector_mealy_tb_behav -key {Behavioral:sim_1:Functional:edge_detector_mealy_tb} -tclbatch {edge_detector_mealy_tb.tcl} -view {C:/DSD_TAREAS/project_edge_detector_mealy/edge_detector_mealy_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/DSD_TAREAS/project_edge_detector_mealy/edge_detector_mealy_tb_behav.wcfg
+source edge_detector_mealy_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 190 ns : File "C:/DSD_TAREAS/project_edge_detector_mealy/project_edge_detector_mealy.srcs/sim_1/new/edge_detector_mealy_tb.sv" Line 51
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'edge_detector_mealy_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1119.453 ; gain = 17.660
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 20:07:11 2026...
