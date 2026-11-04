@@ -1,7 +1,0 @@
-Running: xsim.dir/edge_detector_mealy_tb_behav/xsimk.exe -simmode gui -wdb edge_detector_mealy_tb_behav.wdb -simrunnum 0 -socket 61720
-Design successfully loaded
-Design Loading Memory Usage: 29924 KB (Peak: 29924 KB)
-Design Loading CPU Usage: 796 ms
-Simulation completed
-Simulation Memory Usage: 30608 KB (Peak: 30608 KB)
-Simulation CPU Usage: 874 ms
